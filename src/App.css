@@ -1,0 +1,19 @@
+/* Floating chat animations */
+
+@keyframes wave {
+	0% { transform: rotate(0deg); }
+	15% { transform: rotate(14deg); }
+	30% { transform: rotate(-8deg); }
+	50% { transform: rotate(14deg); }
+	65% { transform: rotate(-4deg); }
+	100% { transform: rotate(0deg); }
+}
+
+.wave {
+	display: inline-block;
+	transform-origin: 70% 70%;
+}
+
+.group:hover .wave {
+	animation: wave 1.2s ease-in-out 0s 2;
+}
